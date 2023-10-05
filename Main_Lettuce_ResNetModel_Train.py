@@ -1,6 +1,3 @@
-# python Main_ResNetModel_Example.py
-# cd C:\Users\03138529\Dropbox\Luke\FoodFields\Software
-# C:\Users\03138529\Desktop\FWF\LettuceVenv\Scripts\activate.bat
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
@@ -91,15 +88,6 @@ def create_model(input_shape):
 
     return model
 
-# def train_model(model, train_data, test_data, batch_size=None, epochs=20,
-#                 steps_per_epoch=None, validation_steps=None):
-
-#     model.fit(train_data, validation_data=test_data, batch_size=batch_size, 
-#               epochs=epochs, steps_per_epoch=steps_per_epoch, 
-#               validation_steps=validation_steps, verbose=2)
-
-#     return model
-
 train_data = load_train(DataFolder,RefFileName+Fold_i+'_Train.csv')
 test_data = load_test(DataFolder,RefFileName+Fold_i+'_Train.csv')
 
@@ -110,7 +98,6 @@ else:
     model = tf.keras.models.load_model(TFModel)#, compile=False
     print(model.summary())
 
-# model = train_model(model, train_data, test_data)
 history = model.fit(train_data, validation_data=test_data, batch_size=None, 
               epochs=EpochN,steps_per_epoch=None,validation_steps=None, verbose=2)
 
