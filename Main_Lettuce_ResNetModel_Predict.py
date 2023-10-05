@@ -1,17 +1,5 @@
-# python Main_ResNetModel_Example.py
-# cd C:\Users\03138529\Dropbox\Luke\FoodFields\Software
-# C:\Users\03138529\Desktop\FWF\LettuceVenv\Scripts\activate.bat
 import pandas as pd
-# import seaborn as sns
-# import matplotlib.pyplot as plt
 import tensorflow as tf
-# from tensorflow.keras.preprocessing.image import ImageDataGenerator
-# from tensorflow.keras.applications.resnet import ResNet50
-# from tensorflow.keras.models import Sequential
-# from tensorflow.keras.layers import GlobalAveragePooling2D, Dense, Dropout, Flatten
-# from tensorflow.keras.optimizers import Adam
-# import warnings
-# warnings.filterwarnings('ignore')
 import numpy as np
 from PIL import Image
 
