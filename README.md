@@ -34,6 +34,6 @@ Estimation of the lettuce fresh weight during growing based on 3D imaging.
   WUR_OnlineChallenge_RGH224
 
 # Raw data preparation
-In the Pii dataset the RGBD data is collected in .ply format at the folder `2023_03_09_Day_23` and in .bag format at the folders `2023_04_04_Day_21` and `2023_05_16_Day_21`.
+All data folders contain point clouds in `.ply` format and RGB images in `.png` format which represent one RGBD frame recorded by 3D RealSence D405 cameras. In the folder `2023_03_09_Day_23` the frames were saved by the cameras to `.ply` and `.png` files. In the folders `2023_04_04_Day_21` and `2023_05_16_Day_21` the frames were extracted from the `.bag` video recorded by the cameras, when the first video frame was extracted from each video. (To process `.bag` videos and extract `.ply` point clouds and RGB images, run `Main_Bag2Ply.m`. [RealSense SDK](https://www.intelrealsense.com/sdk-2/) must be installed.)
 
-To process `.bag` videos and extract `.ply` point clouds and RGB images, run `Main_Bag2Ply.m`. [RealSense SDK](https://www.intelrealsense.com/sdk-2/) must be installed.
+The RGBD frames of the **3rd Autonomous Greenhouse Challenge: Online Challenge Lettuce Images** [Hemming et al., 2022](https://data.4tu.nl/articles/_/15023088/1) were extracted to the folder `WUR_OnlineChallenge`.
