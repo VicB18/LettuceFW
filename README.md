@@ -2,13 +2,13 @@
 Estimation of the lettuce fresh weight during growing based on 3D imaging.
 # Data folder structure
 Lettuce
-  -Piikkio_2023
-    -2023_03_09_Day_23
-      -0 calibrations
-        -Cam1_1.ply
-        -...
-        -Cam4_4.ply
-      -1
+  - Piikkio_2023
+    - 2023_03_09_Day_23
+      - 0 calibrations
+        - Cam1_1.ply
+        - ...
+        - Cam4_4.ply
+      - 1
         -Cam1.ply
         -Cam1.png
         ...
