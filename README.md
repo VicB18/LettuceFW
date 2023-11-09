@@ -1,15 +1,10 @@
 # LettuceFW
 Estimation of the lettuce fresh weight during growing based on 3D imaging.
 # Data folder structure
-
-- j
-- g
-- f
-
-Lettuce
-  Piikkio_2023
-  2023_03_09_Day_23
-    0 calibrations
+- Lettuce
+  - Piikkio_2023
+  - 2023_03_09_Day_23
+    - 0 calibrations
         - Cam1_1.ply
         - ...
         - Cam4_4.ply
@@ -40,3 +35,5 @@ Lettuce
 
 # Raw data preparation
 In the Pii dataset the RGBD data is collected in .ply format at the folder `2023_03_09_Day_23` and in .bag format at the folders `2023_04_04_Day_21` and `2023_05_16_Day_21`.
+
+To process `.bag` videos and extract `.ply` point clouds and RGB images, run `Main_Bag2Ply.m`. [RealSense SDK] (https://www.intelrealsense.com/sdk-2/) must be installed.
