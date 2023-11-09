@@ -15,8 +15,11 @@ The parameters for the 6DOF space transformations for each camera for each recor
 
 # Preparing data for ResNet50
 
+## Image resizing and creating RGH frames
+The original RGB images are resized to the 224x224 pixels size fitting to the ResNEt50 by running `Main_RGH_Frames.m`. The resizing factors are calculated according to the 3D camera FOV, resolution and distance to the object. The B color channel is ommited since it is assumed that it does not add significant information. Instead of the channel B, the channel H is added to the frames. The channel H represents the height of the plant related to a reference plane (plant pot edge) measured in mm multiplyed by the factor 0.5 gray scale unit / mm.
+
 ## Splitting data for 10 fold validation
-The RGH frames in the `Piikkio_2023_ResNet50_RGH224` and `WUR_OnlineChallenge_RGH224` folders are slit into training and validation lists for 10 fold validation by running  `Main_DataSplit10Fold_ResNet.m`.
+The RGH frames in the `Piikkio_2023_RGH224` and `WUR_OnlineChallenge_RGH224` folders are slit into training and validation lists for 10 fold validation by running  `Main_DataSplit10Fold_ResNet.m`.
 
 ## Augmentation
 Since the RGH frames are constructed from inconsistent channels (colora and height), the color augmentation implemented in python libraries cannot be applyed on them. The light intencity, sharpening and bluring augmentation for the R and G channels is done by running `Main_RGHAugmentation.m`, where combination of these augmentation types multiplies the frame number by factor 11. The lists of the training frames are updated as well.
