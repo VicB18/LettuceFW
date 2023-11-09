@@ -16,6 +16,8 @@ The parameters for the 6DOF space transformations for each camera for each recor
 # Preparing data for ResNet50
 
 
+## Augmentation
+Since the RGH frames are constructed from inconsistent channels (colora and height), the color augmentation implemented in python libraries cannot be applyed on them. The light intencity, sharpening and bluring augmentation for the R and G channels is done by running `Main_RGHAugmentation.m`, where combination of these augmentation types multiplies the frame number by factor 11. 
 
 
 # Data folder structure
