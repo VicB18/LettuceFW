@@ -30,6 +30,18 @@ The RGH frames in the `Piikkio_2023_RGH224` and `WUR_OnlineChallenge_RGH224` fol
 ## Augmentation
 Since the RGH frames are constructed from inconsistent channels (colora and height), the color augmentation implemented in python libraries cannot be applyed on them. The light intencity, sharpening and bluring augmentation for the R and G channels is done by running `Main_RGHAugmentation.m`, where combination of these augmentation types multiplies the frame number by factor 11. The lists of the training frames are updated as well.
 
+![](/Figures/2023_03_09_1_au0.png)
+![](/Figures/2023_03_09_1_au1.png)
+![](/Figures/2023_03_09_1_au2.png)
+![](/Figures/2023_03_09_1_au3.png)
+![](/Figures/2023_03_09_1_au4.png)
+![](/Figures/2023_03_09_1_au5.png)
+![](/Figures/2023_03_09_1_au6.png)
+![](/Figures/2023_03_09_1_au7.png)
+![](/Figures/2023_03_09_1_au8.png)
+![](/Figures/2023_03_09_1_au9.png)
+![](/Figures/2023_03_09_1_au10.png)
+
 # ResNet50 training and prediction
 The ResNet50 based model is trained by running `Main_Lettuce_ResNetModel_Train.py`. The model consists of the ResNet50V2 network and regression layers similar to [this example](https://www.kaggle.com/code/amanabdullayev/age-prediction-from-photo-using-cnn-resnet50/notebook). The followign training parameters are defined in the file: training dataset, training fold, epoch number, pretrained model for transfer learning. If a model is trained for a dataset fold, it is also validated by this fold. The results of the prediction are saved in `Lettuce_..._Fold..._Res.csv` files.
 
