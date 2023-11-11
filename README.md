@@ -22,6 +22,9 @@ The point clouds are prepared, their surface is reconstructed by different metho
 ## Image resizing and creating RGH frames
 The original RGB images are resized to the 224x224 pixels size fitting to the ResNet50 by running `Main_RGH_Frames.m`. The resizing factors are calculated according to the 3D camera FOV, resolution and distance to the object. The B color channel is ommited since it is assumed that it does not add significant information. Instead of the channel B, the channel H is added to the frames. The channel H represents the height of the plant related to a reference plane (plant pot edge) measured in mm multiplyed by the factor 0.5 gray scale unit / mm.
 
+![Original image.](/Figures/Piikkio_2023_2023_03_09_Day_23_1_Cam4_RGB.png)
+![RGH image fittef to 224x224 ResNet50 format.](/Figures/Piikkio_2023_2023_03_09_Day_23_1_Cam4_RGH.png)
+
 ## Splitting data for 10 fold validation
 The RGH frames in the `Piikkio_2023_RGH224` and `WUR_OnlineChallenge_RGH224` folders are slit into training and validation lists for 10 fold validation by running  `Main_DataSplit10Fold_ResNet.m`.
 
