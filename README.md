@@ -10,8 +10,7 @@ The RGBD frames of the **3rd Autonomous Greenhouse Challenge: Online Challenge L
 The parameters for the 6DOF space transformations for each camera for each recording session are saved in the file `CameraCalibration.csv`. (To find the parameters, run `Main_Cam3D_Pos_Calibration.m`. Manual area selection is required.)
 
 # Volume calculation
-
-
+The point clouds are prepared, their surface is reconstructed by different methods and the volume is calculated by running `Main_LettuceVolume.m`. The poin clouds are saved in `.mat` format. The calculated volumes are written in the files `CalculatedPlantVolume_Top.csv` for the point clouds constucted from the top view RGBD frames and in the file `CalculatedPlantVolume_All.csv` for the point clouds constructed from the side and top RBGD frames.
 
 # Preparing data for ResNet50
 
