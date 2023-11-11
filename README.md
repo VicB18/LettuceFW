@@ -1,6 +1,9 @@
 # LettuceFW
 Estimation of the lettuce fresh weight during growing based on 3D imaging. The software represents a supplemental material for the paper [Bloch et al., 2023](). The data collected in this study is stored at [https://zenodo.org/](https://zenodo.org/uploads/8410252).
 ![](/Figures/Fig2a.png)
+<p align="center">
+  <img src="https://github.com/VicB18/LettuceFW/blob/main/Figures/Fig2a.png" width="300">
+</p>
 
 # Raw data preparation
 All data folders contain point clouds in `.ply` format and RGB images in `.png` format which represent one RGBD frame recorded by 3D RealSence D405 cameras. In the folder `2023_03_09_Day_23` the frames were saved by the cameras to `.ply` and `.png` files. In the folders `2023_04_04_Day_21` and `2023_05_16_Day_21` the frames were extracted from the `.bag` video recorded by the cameras, when the first video frame was extracted from each video. (To process `.bag` videos and extract `.ply` point clouds and RGB images, run `Main_Bag2Ply.m`. [RealSense SDK](https://www.intelrealsense.com/sdk-2/) must be installed.)
