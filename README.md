@@ -24,6 +24,9 @@ The original RGB images are resized to the 224x224 pixels size fitting to the Re
 
 <img src="https://github.com/VicB18/LettuceFW/blob/main/Figures/Piikkio_2023_2023_03_09_Day_23_1_Cam4_RGB.png" height="224">  ![RGH image fittef to 224x224 ResNet50 format.](/Figures/Piikkio_2023_2023_03_09_Day_23_1_Cam4_RGH.png)
 
+| ![](/Figures/2023_03_09_1_R.png) | ![](/Figures/2023_03_09_1_G.png) | ![](/Figures/2023_03_09_1_H.png) |
+| R channel | G channel | H channel |
+
 ## Splitting data for 10 fold validation
 The RGH frames in the `Piikkio_2023_RGH224` and `WUR_OnlineChallenge_RGH224` folders are slit into training and validation lists for 10 fold validation by running  `Main_DataSplit10Fold_ResNet.m`.
 
