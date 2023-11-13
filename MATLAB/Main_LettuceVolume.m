@@ -1,4 +1,4 @@
-DataFolder='F:\Lettuce\Piikkio_2023_Test\';%
+DataFolder='F:\Lettuce\Piikkio_2023\';
 % DataFolder='F:\Lettuce\WUR_OnlineChallenge\';
 
 TopView=0;% 0 for 4 views
@@ -51,7 +51,7 @@ if ~isfile(ResFileName)
     fclose(fid);
 end
 
-for Plant_i=127:length(FL)%277, 309127
+for Plant_i=140:length(FL)
     if Draw
         figure;
         cla; hold on; axis equal; rotate3d on; xlabel('X'); ylabel('Y'); zlabel('Z');
@@ -243,7 +243,6 @@ trisurf(t,XX,YY,ZZ,'EdgeColor','none');
 axis([-0.15 0.15 0 0.3 0 0.15]);
 set(gcf,'Position',[350 400 400 300]*1.2);
 view(-40,20);
-
 
 % Paper Fig. 3. Vacuum package explanation
 % Plant F:\Lettuce\Piikkio_2023\2023_03_09_Day_23\1\
