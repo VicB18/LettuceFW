@@ -19,7 +19,11 @@ The parameters for the 6DOF space transformations for each camera for each recor
 
 To separate the lettuce from the background, color and geometric features were used.
 
-For lettuce from th ePii dataset the follwoing color condition was used: `G*0.8>B & R*0.8>B & G>20`.
+For lettuce from the Pii dataset the follwoing color condition was used: `G*0.8>B & R*0.8>B & G>20`.
+
+For Salanova and Satine lettuce species from the WUR dataset the follwoing color condition was used: `R>B & G>B & B<100 & R<150`.
+
+For Lugano and Aphylion lettuce species from the WUR dataset the follwoing color condition was used: `G*0.8>B & R*0.8>B & G>20 & R<200`.
 
 ![Plant top view](/Figures/Fig2a.png)
 ![Plant point cloud top view](/Figures/Fig2b.png)
