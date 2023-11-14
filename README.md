@@ -17,18 +17,22 @@ The parameters for the 6DOF space transformations for each camera for each recor
 
 # Building lettuce point cloud
 
-To separate the lettuce from the background, color and geometric features were used.
+To separate the lettuce from the background, color and geometric features were used in `Main_LettuceVolume.m`.
 
 For lettuce from the Pii dataset the follwoing color condition was used: `G*0.8>B & R*0.8>B & G>20`.
 
-For Salanova and Satine lettuce species from the WUR dataset the follwoing color condition was used: `R>B & G>B & B<100 & R<150`.
+For Salanova and Satine lettuce species from the WUR_OnlineChallenge dataset the follwoing color condition was used: `R>B & G>B & B<100 & R<150`.
 
-For Lugano and Aphylion lettuce species from the WUR dataset the follwoing color condition was used: `G*0.8>B & R*0.8>B & G>20 & R<200`.
+For Lugano and Aphylion lettuce species from the WUR_OnlineChallenge dataset the follwoing color condition was used: `G*0.8>B & R*0.8>B & G>20 & R<200`.
 
 ![Plant top view](/Figures/Fig2a.png)
 ![Plant point cloud top view](/Figures/Fig2b.png)
 ![Plant side view](/Figures/Fig2c.png)
 ![Plant point cloud side view](/Figures/Fig2d.png)
+
+# Vacuum package method for surface reconstruction
+
+The Vacuum package method for surface reconstruction is implemented for 2D case in `PointCloudToSurface2DVacuumPackage.m`.
 
 # Volume calculation
 The point clouds are prepared, their surface is reconstructed by different methods and the volume is calculated by running `Main_LettuceVolume.m`. The poin clouds are saved in `.mat` format. The calculated volumes are written in the files `CalculatedPlantVolume_Top.csv` for the point clouds constucted from the top view RGBD frames and in the file `CalculatedPlantVolume_All.csv` for the point clouds constructed from the side and top RBGD frames.
