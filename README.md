@@ -7,13 +7,6 @@ The RGBD images of lettuce was recorded by 3 side and one top 3C RealSense D405 
 
 <img src="https://github.com/VicB18/LettuceFW/blob/main/Figures/ExperimentalSetup.jpg" height="200">  
 
-
-
-![Plant top view](/Figures/Fig2a.png)
-![Plant point cloud top view](/Figures/Fig2b.png)
-![Plant side view](/Figures/Fig2c.png)
-![Plant point cloud side view](/Figures/Fig2d.png)
-
 # Raw data preparation
 All data folders contain point clouds in `.ply` format and RGB images in `.png` format which represent one RGBD frame recorded by 3D RealSence D405 cameras. In the folder `2023_03_09_Day_23` the frames were saved by the cameras to `.ply` and `.png` files. In the folders `2023_04_04_Day_21` and `2023_05_16_Day_21` the frames were extracted from the `.bag` video recorded by the cameras, when the first video frame was extracted from each video. (To process `.bag` videos and extract `.ply` point clouds and RGB images, run `Main_Bag2Ply.m`. [RealSense SDK](https://www.intelrealsense.com/sdk-2/) must be installed.)
 
@@ -21,6 +14,15 @@ The RGBD frames of the **3rd Autonomous Greenhouse Challenge: Online Challenge L
 
 # Calibration of cameras
 The parameters for the 6DOF space transformations for each camera for each recording session are saved in the file `CameraCalibration.csv`. (To find the parameters, run `Main_Cam3D_Pos_Calibration.m`. Manual area selection is required.)
+
+# Building lettuce point cloud
+
+To separate the lettuce from the background, color and geometric features were used.
+
+![Plant top view](/Figures/Fig2a.png)
+![Plant point cloud top view](/Figures/Fig2b.png)
+![Plant side view](/Figures/Fig2c.png)
+![Plant point cloud side view](/Figures/Fig2d.png)
 
 # Volume calculation
 The point clouds are prepared, their surface is reconstructed by different methods and the volume is calculated by running `Main_LettuceVolume.m`. The poin clouds are saved in `.mat` format. The calculated volumes are written in the files `CalculatedPlantVolume_Top.csv` for the point clouds constucted from the top view RGBD frames and in the file `CalculatedPlantVolume_All.csv` for the point clouds constructed from the side and top RBGD frames.
