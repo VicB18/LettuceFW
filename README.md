@@ -3,7 +3,7 @@ Estimation of the lettuce fresh weight during growing based on 3D imaging. The s
 
 # Experimental setup
 
-The RGBD images of lettuce was recorded by 3 side and one top 3C RealSense D405 cameras. For each plant Intel RealSense View was used to record 3-5 s .bag videos from each camera.
+The RGBD images of lettuce was recorded by 3 side and one top 3C RealSense D405 cameras. For each plant Intel RealSense View was used to record 3-5 s `.bag` videos from each camera.
 
 <img src="https://github.com/VicB18/LettuceFW/blob/main/Figures/ExperimentalSetup.jpg" height="200">  
 
@@ -18,6 +18,8 @@ The parameters for the 6DOF space transformations for each camera for each recor
 # Building lettuce point cloud
 
 To separate the lettuce from the background, color and geometric features were used.
+
+For lettuce from th ePii dataset the follwoing color condition was used: `G*0.8>B & R*0.8>B & G>20`.
 
 ![Plant top view](/Figures/Fig2a.png)
 ![Plant point cloud top view](/Figures/Fig2b.png)
