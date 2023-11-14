@@ -3,7 +3,7 @@ Estimation of the lettuce fresh weight during growing based on 3D imaging. The s
 
 # Experimental setup
 
-The RGBD images of lettuce was recorded by 3 side and one top 3C RealSense D405 cameras. For each plant Intel RealSense View was used to record 3-5 s `.bag` videos from each camera.
+The RGBD images of lettuce were recorded by 3 side and one top 3D RealSense D405 cameras. For each plant, Intel RealSense Viewer was used to record 3-5 s `.bag` videos from each camera.
 
 <img src="https://github.com/VicB18/LettuceFW/blob/main/Figures/ExperimentalSetup.jpg" height="200">  
 
